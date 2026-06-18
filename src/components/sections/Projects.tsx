@@ -36,6 +36,7 @@ export default function Projects() {
       category: "Business Applications",
       title: "Accounting Software",
       status: "Live Project",
+      url: "https://afamia.afamiasoft.com",
       description: "Complete accounting systems built for both product-based and service-based companies in the UAE. Covers the full financial workflow from invoicing to VAT reporting.",
       features: [
         "Invoice & billing management",
@@ -52,6 +53,7 @@ export default function Projects() {
       category: "Business Applications",
       title: "HR Management Software",
       status: "Live Project",
+      url: "https://hrbmc.afamiasoft.com",
       description: "A complete HR management platform handling everything from employee records and attendance tracking to payroll processing and leave management.",
       features: [
         "Employee directory & profile management",
@@ -67,7 +69,8 @@ export default function Projects() {
       id: "03",
       category: "Business Applications",
       title: "CRM Platform",
-      status: "",
+      status: "Under Development",
+      url: "https://demo.afamiasoft.com/crm",
       description: "A full Customer Relationship Management system with kanban-style sales pipelines, contact management, and deal tracking — built for UAE-based businesses.",
       features: [
         "Kanban sales pipeline management",
@@ -84,6 +87,7 @@ export default function Projects() {
       category: "Enterprise ERP",
       title: "Safety Power UAE ERP",
       status: "Live Project",
+      url: "https://safetypoweruae.com/",
       description: "A centralised ERP system built for Safety Power UAE — an industrial engineering & safety equipment trading company in the UAE. Covers the full order-to-delivery lifecycle, live inventory, and vendor management.",
       features: [
         "Centralized order management & lifecycle tracking",
@@ -117,13 +121,26 @@ export default function Projects() {
                     <span className="font-handwriting-md text-3xl text-secondary leading-none">{project.id}</span>
                     <span className="font-label-mono text-xs text-on-surface-variant uppercase tracking-widest bg-surface-container px-3 py-1 rounded-full border border-outline-variant leading-none">{project.category}</span>
                     {project.status && (
-                      <span className="flex items-center gap-2 font-label-mono text-[10px] text-green-400 uppercase tracking-wider bg-green-400/10 border border-green-400/20 px-3 py-1 rounded-full leading-none">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center gap-2 font-label-mono text-[10px] uppercase tracking-wider px-3 py-1 rounded-full leading-none border transition-all duration-300 hover:scale-105 cursor-pointer ${
+                          project.status === "Live Project"
+                            ? "text-green-400 bg-green-400/10 border-green-400/20 hover:border-green-400/50"
+                            : "text-amber-400 bg-amber-400/10 border-amber-400/20 hover:border-amber-400/50"
+                        }`}
+                      >
                         <span className="relative flex h-2 w-2">
-                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                          <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                          <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${
+                            project.status === "Live Project" ? "bg-green-400" : "bg-amber-400"
+                          }`}></span>
+                          <span className={`relative inline-flex rounded-full h-2 w-2 ${
+                            project.status === "Live Project" ? "bg-green-500" : "bg-amber-500"
+                          }`}></span>
                         </span>
                         {project.status}
-                      </span>
+                      </a>
                     )}
                   </div>
                   <h3 className="font-headline-lg text-3xl md:text-4xl text-primary uppercase tracking-tighter mt-4">{project.title}</h3>
