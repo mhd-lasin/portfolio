@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Space+Mono:wght@400;500;700&family=Inter:wght@400;700&family=Be+Vietnam+Pro:wght@400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container-highest: #353534;
+  --color-on-primary: #2f3131;
+  --color-on-primary-fixed-variant: #454747;
+  --color-error: #ffb4ab;
+  --color-on-primary-container: #636565;
+  --color-on-background: #e5e2e1;
+  --color-on-tertiary-fixed: #3d0124;
+  --color-outline: #8e9192;
+  --color-background: #131313;
+  --color-error-container: #93000a;
+  --color-surface-container-high: #2a2a2a;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-surface-dim: #131313;
+  --color-primary-fixed: #e2e2e2;
+  --color-on-secondary-container: #242d00;
+  --color-secondary-fixed-dim: #b7d257;
+  --color-surface-container-low: #1c1b1b;
+  --color-on-secondary: #2a3400;
+  --color-tertiary-fixed-dim: #ffafd1;
+  --color-on-error-container: #ffdad6;
+  --color-tertiary-fixed: #ffd8e6;
+  --color-inverse-on-surface: #313030;
+  --color-primary-fixed-dim: #c6c6c7;
+  --color-surface-container: #201f1f;
+  --color-on-tertiary-fixed-variant: #732e51;
+  --color-outline-variant: #444748;
+  --color-primary-container: #e2e2e2;
+  --color-on-surface: #e5e2e1;
+  --color-on-surface-variant: #c4c7c8;
+  --color-inverse-surface: #e5e2e1;
+  --color-secondary-fixed: #d3ee6f;
+  --color-tertiary-container: #ffd8e6;
+  --color-primary: #ffffff;
+  --color-on-primary-fixed: #1a1c1c;
+  --color-on-tertiary: #58173a;
+  --color-surface-tint: #c6c6c7;
+  --color-on-error: #690005;
+  --color-inverse-primary: #5d5f5f;
+  --color-secondary-container: #829a24;
+  --color-secondary: #b7d257;
+  --color-surface: #131313;
+  --color-surface-bright: #3a3939;
+  --color-on-secondary-fixed-variant: #3e4c00;
+  --color-on-tertiary-container: #974b70;
+  --color-on-secondary-fixed: #171e00;
+  --color-tertiary: #ffffff;
+  --color-surface-variant: #353534;
+
+  --spacing-margin-desktop: 64px;
+  --spacing-section-gap: 120px;
+  --spacing-margin-mobile: 16px;
+  --spacing-unit: 8px;
+  --spacing-gutter: 24px;
+
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-handwriting-md: "Be Vietnam Pro", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-label-mono: "Space Mono", monospace;
+  --font-display-xl: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer utilities {
+  .text-headline-lg {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .text-handwriting-md {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .text-body-md {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .text-headline-lg-mobile {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  .text-label-mono {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
+  .text-display-xl {
+    font-size: 120px;
+    line-height: 110px;
+    letter-spacing: -0.04em;
+    font-weight: 800;
+  }
+
+  .bg-grid-pattern {
+    background-size: 20px 20px;
+    background-image: linear-gradient(to right, #444748 1px, transparent 1px),
+                      linear-gradient(to bottom, #444748 1px, transparent 1px);
+  }
+  .grain-texture {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.05;
+    background-image: url("https://www.transparenttextures.com/patterns/felt.png");
+  }
+  .paper-grid {
+    background-color: #ffffff;
+    background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+    background-size: 8px 8px;
+  }
+  .squiggles {
+    text-decoration: none;
+    position: relative;
+  }
+  .squiggles::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #b7d257;
+    clip-path: polygon(0% 50%, 5% 0%, 10% 50%, 15% 100%, 20% 50%, 25% 0%, 30% 50%, 35% 100%, 40% 50%, 45% 0%, 50% 50%, 55% 100%, 60% 50%, 65% 0%, 70% 50%, 75% 100%, 80% 50%, 85% 0%, 90% 50%, 95% 100%, 100% 50%);
+  }
+
+  .floppy-disk {
+    width: 320px;
+    height: 340px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: inset -4px -4px 10px rgba(0,0,0,0.3), inset 4px 4px 10px rgba(255,255,255,0.1), 8px 8px 0px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+  }
+  .floppy-shutter {
+    width: 60%;
+    height: 70px;
+    background: linear-gradient(180deg, #e5e7eb 0%, #9ca3af 100%);
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 20%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  }
+  .floppy-shutter::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 24px;
+    height: 50px;
+    background: #1f2937;
+    border-radius: 2px;
+  }
+  .floppy-label {
+    width: 80%;
+    height: 180px;
+    background: #f9fafb;
+    margin-top: 70px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+  }
+  .floppy-image {
+    width: 100%;
+    height: 120px;
+    background: #111827;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .floppy-write-protect {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    background: #111827;
+    border-radius: 2px;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.5);
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+  .animate-draw-line {
+    stroke-dasharray: 250;
+    animation: draw-line 4s ease-in-out infinite;
+  }
+  .animate-float-rotate {
+    animation: float-rotate 6s ease-in-out infinite;
+  }
+  .animate-card-swing {
+    animation: card-swing 6s ease-in-out infinite;
+  }
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+  .animate-swing {
+    animation: swing ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes draw-line {
+  0% { stroke-dashoffset: 250; }
+  50% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -250; }
+}
+
+@keyframes float-rotate {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-15px) rotate(10deg); }
+}
+
+@keyframes card-swing {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes swing {
+  0% { transform: rotate(3deg); }
+  50% { transform: rotate(-3deg); }
+  100% { transform: rotate(3deg); }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
