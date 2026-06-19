@@ -145,11 +145,11 @@ export default function Contact() {
           </div>
           
           {/* Column 2: Contact Form Card */}
-          <div className="relative w-full group">
+          <div className="relative max-w-xl mx-auto lg:max-w-none w-full group">
             {/* Skeuomorphic Backing Cards for Retro Vibe */}
-            <div className="absolute inset-0 bg-[#eefc81] rounded-2xl transform rotate-1 translate-y-1 translate-x-1 shadow-xl pointer-events-none opacity-90 paper-grid group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-300"></div>
+            <div className="hidden lg:block absolute inset-0 bg-[#eefc81] rounded-2xl transform rotate-1 translate-y-1 translate-x-1 shadow-xl pointer-events-none opacity-90 paper-grid group-hover:rotate-0 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-300"></div>
             
-            <div className="relative bg-surface-container p-6 md:p-8 rounded-2xl border border-outline shadow-2xl transform -rotate-1 group-hover:rotate-0 transition-transform duration-300 z-10 flex flex-col gap-6">
+            <div className="relative bg-surface-container p-6 md:p-8 rounded-2xl border border-outline shadow-2xl transform rotate-0 lg:-rotate-1 group-hover:rotate-0 transition-transform duration-300 z-10 flex flex-col gap-6">
               
               {!isSubmitted ? (
                 <>
@@ -217,7 +217,7 @@ export default function Contact() {
                     <button 
                       type="submit" 
                       disabled={isSubmitting}
-                      className="mt-2 w-full border border-outline py-3.5 flex items-center justify-center gap-2 font-bold text-background bg-[#eefc81] shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_0px_rgba(255,255,255,1)] hover:translate-x-1 hover:translate-y-1 transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed select-none rounded-lg"
+                      className="mt-2 w-full border border-outline py-3.5 flex items-center justify-center gap-2 font-bold text-background bg-[#eefc81] shadow-none lg:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:translate-x-0 hover:translate-y-0 lg:hover:translate-x-1 lg:hover:translate-y-1 transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed select-none rounded-lg"
                     >
                       {isSubmitting ? (
                         <>
@@ -247,7 +247,7 @@ export default function Contact() {
                   </div>
                   <button 
                     onClick={() => setIsSubmitted(false)}
-                    className="border border-outline px-6 py-2.5 flex items-center justify-center gap-2 font-bold text-background bg-secondary shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] hover:shadow-[0px_0px_0px_0px_rgba(255,255,255,1)] hover:translate-x-0.5 hover:translate-y-0.5 transition-all duration-200 cursor-pointer rounded-lg text-sm"
+                    className="border border-outline px-6 py-2.5 flex items-center justify-center gap-2 font-bold text-background bg-secondary shadow-none lg:shadow-[3px_3px_0px_0px_rgba(255,255,255,1)] hover:translate-x-0 hover:translate-y-0 lg:hover:translate-x-0.5 lg:hover:translate-y-0.5 transition-all duration-200 cursor-pointer rounded-lg text-sm"
                   >
                     <span>Send Another Message</span>
                     <ArrowRight className="w-4 h-4" />

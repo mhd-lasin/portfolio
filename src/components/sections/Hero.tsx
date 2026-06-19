@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="relative z-10 max-w-7xl">
-        <h1 className="font-display-xl text-[64px] md:text-display-xl leading-none uppercase mb-unit tracking-tighter">
+        <h1 className="font-display-xl text-[64px] md:text-display-xl leading-none uppercase mb-unit tracking-tighter text-center md:text-left">
           Full Stack<br /><span className="text-secondary">Developer</span>
         </h1>
         <div className="mt-48 md:mt-12 flex flex-col md:flex-row md:items-end justify-between gap-gutter">

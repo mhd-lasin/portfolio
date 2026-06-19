@@ -306,7 +306,7 @@ export function CinematicFooter() {
           {/* Giant background text */}
           <div
             ref={giantTextRef}
-            className="footer-giant-bg-text absolute bottom-[1vh] md:bottom-[-2vh] left-1/2 -translate-x-1/2 whitespace-nowrap z-0 pointer-events-none select-none"
+            className="footer-giant-bg-text absolute bottom-[15vh] md:bottom-[-2vh] left-1/2 -translate-x-1/2 whitespace-nowrap z-0 pointer-events-none select-none"
           >
             LASIN
           </div>
@@ -395,7 +395,7 @@ export function CinematicFooter() {
             <MagneticButton
               as="button"
               onClick={scrollToTop}
-              className="w-12 h-12 rounded-full footer-glass-pill flex items-center justify-center text-on-surface-variant hover:text-on-background group order-3"
+              className="absolute right-6 bottom-8 md:relative md:right-auto md:bottom-auto w-12 h-12 rounded-full footer-glass-pill flex items-center justify-center text-on-surface-variant hover:text-on-background group md:order-3 z-30"
             >
               <svg className="w-5 h-5 transform group-hover:-translate-y-1.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
