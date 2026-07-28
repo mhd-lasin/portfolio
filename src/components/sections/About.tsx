@@ -43,7 +43,7 @@ export default function About() {
             <div className="bg-white p-4 pb-12 shadow-xl transform -rotate-3 absolute inset-0 transition-all duration-300 group-hover:rotate-0 group-hover:scale-105 group-hover:-translate-y-2"></div>
             <div className="relative bg-white p-4 pb-16 shadow-2xl transform -rotate-1 transition-all duration-300 group-hover:rotate-0 group-hover:scale-105 group-hover:-translate-y-2 z-10">
               <div className="aspect-square overflow-hidden bg-gray-200">
-                <img src="/images/lasin.jpeg" alt="Me" className="w-full h-full object-cover" />
+                <img src="/images/Muhamed-Lasin.jpeg" alt="Muhamed Lasin" className="w-full h-full object-cover" />
               </div>
               <div className="absolute bottom-4 left-0 w-full text-center">
                 <span className="font-handwriting-md text-xl text-black">Yep, that's me</span>

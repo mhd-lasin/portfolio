@@ -366,11 +366,6 @@ export function CinematicFooter() {
                   </svg>
                   Email Me
                 </MagneticButton>
-
-                <MagneticButton as="a" href="/Muhamed%20Lasin%20-%20Web%20Developer.pdf" target="_blank" rel="noopener noreferrer" className="footer-glass-pill px-6 py-3 rounded-full text-on-surface-variant font-medium text-xs md:text-sm hover:text-on-background flex items-center gap-2 group">
-                  <span className="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
-                  View Resume
-                </MagneticButton>
               </div>
             </div>
           </div>

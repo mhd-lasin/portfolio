@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Star, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,12 +28,6 @@ export default function Header() {
           <a className="font-label-mono text-label-mono uppercase text-on-surface-variant hover:text-primary transition-colors" href="#services">Services</a>
           <a className="font-label-mono text-label-mono uppercase text-on-surface-variant hover:text-primary transition-colors" href="#work">Work</a>
           <a className="font-label-mono text-label-mono uppercase text-on-surface-variant hover:text-primary transition-colors" href="#contact">Contact</a>
-          <a href="/Muhamed%20Lasin%20-%20Web%20Developer.pdf" target="_blank" rel="noopener noreferrer" className="ml-4 transform rotate-1 hover:rotate-0 transition-transform cursor-pointer block">
-            <div className="paper-grid border border-outline px-4 py-2 flex items-center gap-2 shadow-[4px_4px_0px_0px_rgba(183,210,87,1)]">
-              <Star className="text-background w-4 h-4 fill-background" />
-              <span className="font-handwriting-md text-handwriting-md text-background font-bold whitespace-nowrap">View Resume</span>
-            </div>
-          </a>
         </nav>
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)} 
@@ -85,19 +79,6 @@ export default function Header() {
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
-          </a>
-          
-          <a 
-            href="/Muhamed%20Lasin%20-%20Web%20Developer.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 transform rotate-1 hover:rotate-0 transition-transform cursor-pointer block" 
-            onClick={() => setIsMenuOpen(false)}
-          >
-            <div className="paper-grid border border-outline px-4 py-2 flex items-center gap-2 shadow-[4px_4px_0px_0px_rgba(183,210,87,1)]">
-              <Star className="text-background w-4 h-4 fill-background" />
-              <span className="font-handwriting-md text-handwriting-md text-background font-bold whitespace-nowrap">View Resume</span>
-            </div>
           </a>
         </nav>
       </div>
