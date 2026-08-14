@@ -69,8 +69,8 @@ export default function Projects() {
       id: "03",
       category: "Business Applications",
       title: "CRM Platform",
-      status: "Under Development",
-      url: "https://demo.afamiasoft.com/crm",
+      status: "Live Project",
+      url: "https://crmbmc.afamiasoft.com",
       description: "A full Customer Relationship Management system with kanban-style sales pipelines, contact management, and deal tracking — built for UAE-based businesses.",
       features: [
         "Kanban sales pipeline management",
