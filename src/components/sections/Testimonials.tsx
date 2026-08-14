@@ -53,7 +53,7 @@ const testimonialsData = [
 
 function TestimonialCard({ data }: { data: typeof testimonialsData[0]; key?: string | number }) {
   return (
-    <div className="relative w-[260px] md:w-[400px] h-[380px] md:h-[500px] rounded-3xl overflow-hidden group shrink-0 shadow-xl border border-outline-variant/20 bg-surface-container">
+    <div className="relative w-65 md:w-100 h-95 md:h-125 rounded-3xl overflow-hidden group shrink-0 shadow-xl border border-outline-variant/20 bg-surface-container">
       <img 
         src={data.image} 
         alt={data.client} 

@@ -149,12 +149,12 @@ export default function Projects() {
             </div>
 
             {/* Description */}
-            <p className="font-body-md text-on-surface-variant text-lg leading-relaxed mb-8 max-w-4xl md:pl-22 lg:ml-[88px]">
+            <p className="font-body-md text-on-surface-variant text-lg leading-relaxed mb-8 max-w-4xl md:pl-22 lg:ml-22">
               {project.description}
             </p>
 
             {/* Features and Tags grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:pl-22 lg:ml-[88px]">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:pl-22 lg:ml-22">
               <div className="lg:col-span-2 space-y-4">
                 <span className="font-label-mono text-[10px] text-secondary uppercase mb-2 block">Key Features</span>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">

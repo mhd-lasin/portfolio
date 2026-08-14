@@ -4,8 +4,8 @@ export default function Hero() {
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-32 min-h-[70vh] flex flex-col justify-center px-margin-mobile md:px-margin-desktop relative overflow-hidden">
       <div className="absolute top-[19%] md:top-1/2 -translate-y-1/2 opacity-20 pointer-events-none left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-12 lg:right-24">
-        <div className="w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[480px] md:h-[480px] border-2 border-secondary rounded-full flex items-center justify-center animate-spin" style={{ animationDuration: '30s' }}>
-          <div className="w-[180px] h-[180px] sm:w-[200px] sm:h-[200px] md:w-[320px] md:h-[320px] border-2 border-outline-variant rounded-full flex items-center justify-center">
+        <div className="w-70 h-70 sm:w-80 sm:h-80 md:w-120 md:h-120 border-2 border-secondary rounded-full flex items-center justify-center animate-spin" style={{ animationDuration: '30s' }}>
+          <div className="w-45 h-45 sm:w-50 sm:h-50 md:w-80 md:h-80 border-2 border-outline-variant rounded-full flex items-center justify-center">
             <Aperture className="text-secondary w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56" />
           </div>
         </div>

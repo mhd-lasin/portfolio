@@ -37,7 +37,7 @@ export default function Services() {
   const carouselCards = services.map((service, index) => (
     <div 
       key={index} 
-      className={`bg-[#eefc81] p-4 md:p-8 shadow-2xl transform ${service.rotate} hover:rotate-0 transition-transform duration-300 min-h-[260px] md:min-h-[350px] w-[220px] md:w-[320px] flex flex-col paper-grid`}
+      className={`bg-[#eefc81] p-4 md:p-8 shadow-2xl transform ${service.rotate} hover:rotate-0 transition-transform duration-300 min-h-65 md:min-h-87.5 w-55 md:w-80 flex flex-col paper-grid`}
     >
       <h3 className="font-handwriting-md text-lg md:text-2xl text-black font-bold mb-2 md:mb-4">{service.title}</h3>
       <div className="mb-2 md:mb-4">
