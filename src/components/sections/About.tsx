@@ -67,7 +67,7 @@ export default function About() {
               containerClassName="!my-0"
               textClassName="!text-sm md:!text-base !font-normal !leading-relaxed text-on-surface-variant"
             >
-              I work with React to create dynamic front-end experiences and use technologies like Node.js, Express.js, Django, FastAPI, and Laravel to build powerful back-end systems.
+              I architect frontend SPAs and interfaces with React 19, TypeScript, Vue 3, and Tailwind CSS, backed by robust server-side APIs built in PHP, FastAPI, Python, and Node.js.
             </ScrollReveal>
             <ScrollReveal
               baseOpacity={0}
@@ -77,7 +77,7 @@ export default function About() {
               containerClassName="!my-0"
               textClassName="!text-sm md:!text-base !font-normal !leading-relaxed text-on-surface-variant"
             >
-              I also have experience with MongoDB, PHP, jQuery, and AJAX, allowing me to develop fast and responsive applications across the full stack.
+              I have deep experience with MySQL, PostgreSQL, and MongoDB, developing high-concurrency ERP modules, real-time WebSockets, and AI-assisted enterprise business software.
             </ScrollReveal>
           </div>
         </div>

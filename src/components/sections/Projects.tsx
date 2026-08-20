@@ -6,24 +6,33 @@ export default function Projects() {
   
   const skillCategories = ["All", "Frontend", "Backend", "Database & Tools"];
   const skills = [
-    { name: "React", category: "Frontend" },
+    { name: "React 19", category: "Frontend" },
+    { name: "TypeScript", category: "Frontend" },
     { name: "JavaScript", category: "Frontend" },
-    { name: "HTML5", category: "Frontend" },
-    { name: "CSS3", category: "Frontend" },
-    { name: "jQuery", category: "Frontend" },
-    { name: "AJAX", category: "Frontend" },
+    { name: "Vue 3 / Nuxt", category: "Frontend" },
+    { name: "Ant Design", category: "Frontend" },
+    { name: "Redux Toolkit", category: "Frontend" },
+    { name: "TanStack Query", category: "Frontend" },
     { name: "Tailwind CSS", category: "Frontend" },
-    { name: "Node.js", category: "Backend" },
-    { name: "Express.js", category: "Backend" },
-    { name: "Django", category: "Backend" },
-    { name: "FastAPI", category: "Backend" },
-    { name: "Laravel", category: "Backend" },
+    { name: "HTML5 / CSS3", category: "Frontend" },
     { name: "PHP", category: "Backend" },
+    { name: "RESTful APIs", category: "Backend" },
+    { name: "FastAPI / Python", category: "Backend" },
+    { name: "Node.js / Express", category: "Backend" },
+    { name: "Laravel", category: "Backend" },
+    { name: "Django", category: "Backend" },
+    { name: "MySQL / MariaDB", category: "Database & Tools" },
+    { name: "PostgreSQL", category: "Database & Tools" },
     { name: "MongoDB", category: "Database & Tools" },
-    { name: "Vite", category: "Database & Tools" },
-    { name: "Framer Motion", category: "Database & Tools" },
+    { name: "VPS Hosting", category: "Database & Tools" },
+    { name: "Hostinger", category: "Database & Tools" },
+    { name: "Apache Server", category: "Database & Tools" },
+    { name: "Docker", category: "Database & Tools" },
     { name: "Git", category: "Database & Tools" },
-    { name: "Postman", category: "Database & Tools" }
+    { name: "Vite", category: "Database & Tools" },
+    { name: "Socket.IO", category: "Database & Tools" },
+    { name: "Postman", category: "Database & Tools" },
+    { name: "Framer Motion", category: "Database & Tools" }
   ];
   
   const filteredSkills = activeFilter === 'All' 
@@ -33,53 +42,53 @@ export default function Projects() {
   const projects = [
     {
       id: "01",
-      category: "Business Applications",
-      title: "Accounting Software",
+      category: "Enterprise ERP",
+      title: "Perpetual & Service Accounting ERP",
       status: "Live Project",
       url: "https://afamia.afamiasoft.com",
-      description: "Complete accounting systems built for both product-based and service-based companies in the UAE. Covers the full financial workflow from invoicing to VAT reporting.",
+      description: "Dual-model accounting ERP suites built for UAE businesses: 'Perpetual' with full multi-warehouse inventory lifecycle management (GRN, Delivery Notes, Stock Reconciliation) and 'Service' for lean, zero-inventory corporate operations. Features automated UAE VAT compliance and financial reporting.",
       features: [
-        "Invoice & billing management",
-        "Accounts payable & receivable",
-        "VAT & tax reporting for UAE compliance",
-        "Financial dashboards & P&L reports",
-        "Multi-currency & AED support"
+        "Perpetual inventory lifecycle: GRN, Delivery Notes, Stock Reconciliation & Valuation",
+        "Full Procure-to-Pay & Order-to-Cash financial cycles",
+        "Automated UAE VAT tax calculations & compliance reporting",
+        "Real-time Trial Balance, P&L statements & multi-currency AED billing",
+        "Single Sign-On (SSO) & hardware MAC address license activation"
       ],
-      tags: ["Full-Stack", "UAE VAT", "ERP", "Finance"],
+      tags: ["PHP", "MySQL", "UAE VAT", "Perpetual Inventory", "ERP", "SSO"],
       icon: <Database className="w-8 h-8 text-secondary" />
     },
     {
       id: "02",
       category: "Business Applications",
-      title: "HR Management Software",
+      title: "Enterprise HRMS & Payroll System",
       status: "Live Project",
       url: "https://hrbmc.afamiasoft.com",
-      description: "A complete HR management platform handling everything from employee records and attendance tracking to payroll processing and leave management.",
+      description: "A comprehensive HR Management & Payroll Platform built to enforce UAE Labor Law regulations, handling biometric attendance sync, automated End-of-Service (EOS) gratuity settlements, and background cron alert systems.",
       features: [
-        "Employee directory & profile management",
-        "Attendance tracking & reporting",
-        "Payroll processing & salary management",
-        "Leave requests & approval workflows",
-        "Performance evaluation modules"
+        "UAE Labor Law-compliant payroll engine & EOS gratuity settlement",
+        "Automated cron jobs for Visa, Emirates ID & Passport expiry notifications",
+        "Biometric & shift attendance tracking with overtime policy rules",
+        "Employee recruitment pipelines (Interviews to Offer/Joining Letters)",
+        "Leave management, loan repayment schedules & performance appraisals"
       ],
-      tags: ["HRMS", "Payroll", "Attendance", "Full-Stack"],
+      tags: ["PHP", "MySQL", "Cron Automation", "UAE Labor Law", "HRMS", "Payroll"],
       icon: <Server className="w-8 h-8 text-secondary" />
     },
     {
       id: "03",
       category: "Business Applications",
-      title: "CRM Platform",
+      title: "Next-Gen CRM Platform",
       status: "Live Project",
       url: "https://crmbmc.afamiasoft.com",
-      description: "A full Customer Relationship Management system with kanban-style sales pipelines, contact management, and deal tracking — built for UAE-based businesses.",
+      description: "A high-performance SPA built with React 19, TypeScript, and Ant Design, backed by a PHP REST API. Features real-time WebSocket deal tracking, interactive Kanban sales pipelines, and detailed leads & revenue analytics.",
       features: [
-        "Kanban sales pipeline management",
-        "Contact & company database",
-        "Deal tracking & forecasting",
-        "Activity logs & follow-up reminders",
-        "Sales performance reports"
+        "Interactive drag-and-drop Kanban sales pipeline for deal conversion",
+        "Real-time notifications & updates powered by Socket.IO",
+        "Comprehensive Leads & Sales analytics dashboards with Recharts",
+        "Multilingual localization (i18next Arabic/English)",
+        "Client-side PDF / Excel reporting & PHP REST API architecture"
       ],
-      tags: ["CRM", "Sales Pipeline", "Full-Stack"],
+      tags: ["React 19", "TypeScript", "Ant Design", "Redux Toolkit", "Socket.IO", "PHP REST API"],
       icon: <Layout className="w-8 h-8 text-secondary" />
     },
     {
@@ -94,9 +103,9 @@ export default function Projects() {
         "Real-time inventory & stock level monitoring",
         "Automated invoicing & purchase order generation",
         "Customer & vendor relationship database",
-        "Role-based access & user management"
+        "Role-based access & containerized Docker deployment"
       ],
-      tags: ["ERP", "Industrial", "Vue 3", "FastAPI", "PostgreSQL", "Full-Stack"],
+      tags: ["Vue 3", "Nuxt", "FastAPI", "Python", "PostgreSQL", "Docker", "Full-Stack"],
       icon: <Globe className="w-8 h-8 text-secondary" />
     }
   ];

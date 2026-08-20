@@ -21,50 +21,50 @@ export default function Experience() {
             </div>
             
             <p className="font-body-md text-on-surface-variant mb-8 leading-relaxed">
-              I develop complete end-to-end business applications for companies across the UAE — including accounting systems for product-based, service-based, and garage businesses, CRM platforms, and HR management software. I also integrate AI technologies into ERP systems — from intelligent automation to AI-powered features — and lead the full development lifecycle from requirements to deployment and ongoing client support.
+              I architect and build full-stack enterprise business applications across the UAE using modern technologies including <span className="text-primary font-bold">React 19, TypeScript, Ant Design, and Redux Toolkit</span> for dynamic frontend SPAs, and <span className="text-primary font-bold">PHP & MySQL</span> for high-performance backend REST APIs. My work spans comprehensive perpetual & service accounting ERPs, intelligent CRM platforms, UAE Labor Law-compliant HRMS systems, financial auditing engines, and AI-driven business automation.
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div>
-                  <span className="font-label-mono text-[10px] text-secondary uppercase mb-2 block">Software Built</span>
+                  <span className="font-label-mono text-[10px] text-secondary uppercase mb-2 block">Enterprise Software Built</span>
                   <ul className="space-y-2">
-                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span>Accounting — Service-based Companies</span></li>
-                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span>Accounting — Product-based Companies</span></li>
-                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span>Accounting — Garage Management ERP</span></li>
-                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span>CRM Platform</span></li>
-                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span>HR Management Software</span></li>
-                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span>AI-Integrated ERP Features</span></li>
+                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span><strong>Perpetual Accounting ERP:</strong> Full inventory lifecycle (GRN, Delivery Notes, Stock Reconciliation, Valuation) + UAE VAT</span></li>
+                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span><strong>Service Accounting ERP:</strong> Zero-inventory financial management, AP/AR aging & multi-currency billing</span></li>
+                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span><strong>Next-Gen CRM Platform:</strong> React 19 SPA, TypeScript, Ant Design, Redux Toolkit, Socket.IO & Kanban pipelines</span></li>
+                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span><strong>Enterprise HRMS & Payroll:</strong> UAE Labor Law payroll/gratuity engine & automated document expiry cron alerts</span></li>
+                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span><strong>Financial Auditing Engine:</strong> Voucher reconciliation, discrepancy detection & ledger audit trails</span></li>
+                    <li className="flex items-start gap-2 font-body-md text-on-surface-variant"><Terminal className="text-secondary w-4 h-4 mt-1 shrink-0" /> <span><strong>Security & SSO:</strong> Single Sign-On (SSO) authentication & hardware MAC license activation</span></li>
                   </ul>
                 </div>
                 <div className="bg-secondary/10 border-l-4 border-secondary p-4 rounded-r-xl">
                   <div className="flex items-center gap-2 mb-2">
                     <Sparkles className="text-secondary w-4 h-4" />
-                    <span className="font-label-mono text-[10px] text-secondary uppercase">AI Integration in ERP Systems</span>
+                    <span className="font-label-mono text-[10px] text-secondary uppercase">AI Integration & Automation</span>
                   </div>
                   <p className="font-body-md text-primary font-bold italic text-sm">Building and integrating AI-powered features into business software — intelligent document processing, automated report generation, smart analytics dashboards, and AI-assisted workflows across accounting, HR, and CRM platforms.</p>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="border border-outline-variant/50 p-4 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors flex flex-col">
-                  <Users className="text-secondary mb-3 w-6 h-6" />
-                  <p className="font-label-mono text-[10px] text-on-surface-variant uppercase mb-2">Requirements & Analysis</p>
-                  <p className="text-[10px] text-secondary leading-relaxed mt-auto">Gathering client needs and analyzing business processes to define system requirements.</p>
+                  <Palette className="text-secondary mb-3 w-6 h-6" />
+                  <p className="font-label-mono text-[10px] text-on-surface-variant uppercase mb-2">Frontend Engineering</p>
+                  <p className="text-[10px] text-secondary leading-relaxed mt-auto">Building responsive SPAs with React 19, TypeScript, Ant Design, Redux Toolkit, and Socket.IO.</p>
                 </div>
                 <div className="border border-outline-variant/50 p-4 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors flex flex-col">
                   <Layers className="text-secondary mb-3 w-6 h-6" />
-                  <p className="font-label-mono text-[10px] text-on-surface-variant uppercase mb-2">System Architecture</p>
-                  <p className="text-[10px] text-secondary leading-relaxed mt-auto">Designing scalable architecture, data models and technical approach for complex systems.</p>
+                  <p className="font-label-mono text-[10px] text-on-surface-variant uppercase mb-2">Backend & REST APIs</p>
+                  <p className="text-[10px] text-secondary leading-relaxed mt-auto">Engineering robust PHP REST APIs, business logic controllers, and automated cron daemons.</p>
                 </div>
                 <div className="border border-outline-variant/50 p-4 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors flex flex-col">
-                  <Code className="text-secondary mb-3 w-6 h-6" />
-                  <p className="font-label-mono text-[10px] text-on-surface-variant uppercase mb-2">Full-Stack Development</p>
-                  <p className="text-[10px] text-secondary leading-relaxed mt-auto">Backend logic, frontend features, database design and API integrations.</p>
+                  <Database className="text-secondary mb-3 w-6 h-6" />
+                  <p className="font-label-mono text-[10px] text-on-surface-variant uppercase mb-2">Database & Security</p>
+                  <p className="text-[10px] text-secondary leading-relaxed mt-auto">Designing MySQL schemas, multi-tenant databases, SSO auth, and hardware MAC licensing.</p>
                 </div>
                 <div className="border border-outline-variant/50 p-4 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors flex flex-col">
                   <ShieldCheck className="text-secondary mb-3 w-6 h-6" />
-                  <p className="font-label-mono text-[10px] text-on-surface-variant uppercase mb-2">Testing & QA</p>
-                  <p className="text-[10px] text-secondary leading-relaxed mt-auto">Writing and running tests to ensure software reliability before every release.</p>
+                  <p className="font-label-mono text-[10px] text-on-surface-variant uppercase mb-2">ERP Domain Logic</p>
+                  <p className="text-[10px] text-secondary leading-relaxed mt-auto">Implementing UAE VAT tax compliance, accounting cycles, and UAE Labor Law payroll calculations.</p>
                 </div>
               </div>
             </div>
